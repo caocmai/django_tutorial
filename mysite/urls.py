@@ -21,6 +21,3 @@ urlpatterns = [
     # path('', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
-
-# username: admin
-# password: learncode
