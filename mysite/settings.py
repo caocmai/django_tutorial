@@ -129,4 +129,4 @@ STATICFILES_DIRS = [
 
 ALLOWED_HOSTS = ['localhost', 'cao-django-poll.herokuapp.com']
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
