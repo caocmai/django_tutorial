@@ -25,7 +25,8 @@ SECRET_KEY = 'cvkz+s9upp(tx)xq*6jjq6b=t3*r^jv4y1wvjv6ww2-ildj@7k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+## Added below
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +121,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+STATICFILES_DIRS = [
+     os.path.join(BASE_DIR, "static"),
+ ]
+
+ALLOWED_HOSTS = ['localhost', 'cao-django-poll.herokuapp.com']
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
